@@ -1,0 +1,339 @@
+.cart {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #007bff;
+    transition: 0.1s;
+    cursor: pointer;
+    position: fixed; /* Фиксированное расположение */
+    bottom:  50px; 
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    padding: 15px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  /* Увеличиваем кнопку при наведении на нее */
+  .cart:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Стилизуем счетчик товаров */
+  .cart__num {
+    position: absolute;
+    background-color: #e80027;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    bottom: -5px;
+    right: -5px;
+  }
+
+  .card__add {
+    display: flex; /* Делаем кнопку флекс-контейнером */
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    padding: 10px; /* Добавляем отступы, если необходимо */
+}
+  .cart__image{
+    width: 60px;
+    justify-content: center;
+    margin-top: 3px;
+    margin-left: 6px;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Увеличиваем затемнение на фоне */
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow-y: auto;
+    backdrop-filter: blur(5px); /* Добавляем размытие фона */
+}
+.popup__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределяем элементы внутри равномерно */
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh; /* Устанавливаем максимальную высоту */
+    background-color: #fff;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    position: relative;
+    overflow-y: auto; /* Позволяет прокручивать содержимое контейнера */
+}
+
+.popup__item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 20px; /* Уменьшаем отступы */
+  transition: background-color 0.2s; /* Плавный переход цвета фона */
+}
+
+.popup__item:last-of-type {
+    border-bottom: none;
+}
+
+.popup__title {
+  font-size: 30px; 
+  font-weight: bold; /* Сделаем заголовок жирным */
+  color: #333; /* Цвет заголовка */
+  padding: 20px; /* Добавляем отступы */
+  border-bottom: 2px solid #003063; /* Добавляем нижнюю границу */
+}
+
+/* Стили для вывода товара */
+.popup__product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.popup__product-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.popup__product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.popup__product-title {
+    max-width: 300px;
+    font-weight: 500;
+}
+
+.popup__product-price {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+/* Стили для кнопки удаления товара */
+.popup__product-delete {
+  font-size: 14px; /* Увеличиваем размер шрифта */
+  padding: 8px 12px; /* Добавляем отступы */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Закругляем углы */
+  background-color: #d62240; /* Красный цвет фона */
+  color: #fff; /* Цвет текста */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s, transform 0.2s; /* Плавный переход цвета и анимация */
+}
+
+.popup__product-delete:hover {
+  background-color: #c71e36; /* Темнее при наведении */
+  transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.popup__product-delete:focus {
+  outline: none; /* Убираем обводку при фокусе */
+  box-shadow: 0 0 0 2px rgba(214, 34, 64, 0.5); /* Добавляем эффект фокуса */
+}
+
+/* Добавление иконки к кнопке удаления */
+.popup__product-delete::before {
+  margin-right: 5px; /* Отступ между иконкой и текстом */
+  font-size: 16px; /* Размер иконки */
+}
+
+
+/* Стили для вывода стоимости товаров */
+.popup__cost {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.popup__cost-title {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #364364;
+    text-align: right;
+}
+
+.popup__cost-value {
+    font-size: 20px;
+}
+
+/* Стили для кнопки закрытия окна */
+.popup__close {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    color: rgba(54, 67, 100, 0.7);
+    font-size: 20px;
+}
+
+.popup__close:hover {
+    color: rgb(54, 67, 100);
+}
+
+.popup--open {
+    display: flex;
+}
+.popup__button {
+  background-color: #007bff; /* Цвет кнопки */
+  color: #fff; /* Цвет текста кнопки */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Закругляем углы кнопки */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+.card {
+    display: flex; /* Используем Flexbox */
+    flex-direction: column; /* Вертикальная ориентация */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    border: none; /* Убирает рамку по умолчанию */
+    border-radius: 10px; /* Закругляет углы карточки */
+    box-shadow: none; /* Убирает тень по умолчанию */
+    transition: transform 0.2s, box-shadow 0.2s, border 0.2s; /* Плавный эффект при наведении */
+    margin: 20px; /* Отступы между карточками */
+    overflow: hidden; /* Скрывает переполнение */
+    height: 550px; /* Устанавливаем фиксированную высоту карточки */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Увеличивает карточку при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляет легкую тень при наведении */
+    border: 1px solid #ddd; /* Добавляет рамку при наведении */
+  }
+  
+  .card__image {
+    width: 100%; /* Изображение занимает всю ширину карточки */
+    height: auto; /* Высота изображения автоматически */
+  }
+  
+  .card-body {
+    padding: 15px; /* Отступы внутри карточки */
+    background-color: #fff; /* Фоновый цвет карточки */
+    flex-grow: 1; /* Позволяет телу карточки занимать доступное пространство */
+  }
+  
+  .card__title {
+    font-size: 24px; /* Размер заголовка */
+    color: #333; /* Цвет заголовка */
+    margin: 10px 0; /* Отступы сверху и снизу */
+  }
+  
+  .card__short_description {
+    font-size: 16px; /* Размер описания */
+    color: #666; /* Цвет описания */
+    margin-bottom: 5px; /* Отступ снизу */
+    max-height: 60px; /* Устанавливаем максимальную высоту для описания */
+    overflow: hidden; /* Скрывает переполнение */
+    text-overflow: ellipsis; /* Добавляет многоточие */
+    display: -webkit-box; /* Для поддержки многоточия */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    -webkit-line-clamp: 2; /* Количество строк, после которых текст будет обрезан */
+    white-space: normal; /* Позволяет перенос текста на новую строку */
+  }
+  
+  .card__price--common {
+    font-size: 20px; /* Размер цены */
+    color: #007bff; /* Цвет цены */
+    margin-bottom: 10px; /* Отступ снизу */
+  }
+  
+  .card__available {
+    font-size: 16px; /* Размер доступности */
+    color: #28a745; /* Цвет доступности */
+    margin-bottom: 15px; /* Отступ снизу */
+  }
+  
+  .btn-rectangle {
+    padding: 10px 20px; /* Отступы для кнопки */
+    border-radius: 5px; /* Закругленные углы кнопки */
+  }
+  
+  .btn-rectangle:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+  }
+
+  /* Новый стиль для нижней части карточки */
+  .card-footer {
+    padding: 15px; /* Отступы внутри нижней части карточки */
+  }
+  
+  .container-fluid {
+    max-width: 1480px; 
+    margin: 0 auto; 
+  }
+  
+  .btn-catalog{
+    padding: 10px 30px; 
+  }
+  .button-container {
+    display: flex; /* Используем flexbox */
+    justify-content: center; /* Центрируем кнопки по горизонтали */
+  }
+  .popup__cost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    width: 100%; /* Убедитесь, что контейнер занимает всю ширину */
+}
+
+.popup__cost-title {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #364364;
+    text-align: right;
+    flex: 1; /* Позволяет заголовку занимать равное пространство */
+}
+
+.popup__cost-value {
+    font-size: 20px;
+    flex: 1; /* Позволяет значению занимать равное пространство */
+    text-align: right; /* Выравнивание текста по правому краю */
+}
+.popup__product {
+  display: flex;
+  justify-content: space-between; /* Размещаем элементы по краям */
+  align-items: center; /* Центрируем по вертикали */
+  padding: 10px; /* Добавим немного отступа */
+}
+
+.popup__product-image {
+  width: 100px; /* Фиксированная ширина для изображения */
+  height: auto; /* Автоматическая высота */
+}
+
+.popup__product-title {
+  flex: 1; /* Занимает оставшееся пространство */
+  text-align: center; /* Центрируем текст */
+}
+
+.popup__product-price {
+  width: 100px; /* Фиксированная ширина для цены */
+  text-align: right; /* Выравниваем текст по правому краю */
+}
+
+.popup__product-delete {
+  margin-left: 10px; /* Отступ между ценой и кнопкой удаления */
+}

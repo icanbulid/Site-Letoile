@@ -1,0 +1,55 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+	<title>ЛЭТУАЛЬ - интернет-магазин косметики и парфюмерии</title>
+	<script>
+		function performSearch(event) {event.preventDefault();
+		  const query = document.querySelector(".form-control").value;
+		  window.location.href = `Search.html?search=${encodeURIComponent(query)}`;
+		}
+	  </script>
+</head>
+<div id="header-container"></div>
+<body>
+	
+
+
+	<div class="container-fluid"> 
+		<div class="row justify-content-center"> 
+	<div class="col-md-10"> 
+        <h1 class="text-center mb-4">О компании ЛЭТУАЛЬ</h1>
+        <p class="text-center">В интернет-магазине <a href="https://www.letu.ru" target="_blank">www.letu.ru</a> представлено более 1000 брендов, 200 из которых – эксклюзивно представлены на сайте.</p>
+        <p class="text-center">Хранение и транспортировка продукции осуществляется в соответствии с требованиями ГОСТ и нормативами государственных органов и производителей.</p>
+
+        <h2 class="mt-5">Наши достижения</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Лидер парфюмерно-косметической индустрии в России.</li>
+            <li class="list-group-item">1000 магазинов по всей стране – от Калининграда до Владивостока.</li>
+            <li class="list-group-item">Широкий ассортимент и эксклюзивные бренды, которые представлены только у нас.</li>
+            <li class="list-group-item">Индивидуальный подход к каждому клиенту.</li>
+            <li class="list-group-item">Уникальные бьюти-пространства для новых эмоций при покупках.</li>
+            <li class="list-group-item">Ответственный бизнес: забота о природе и благотворительность.</li>
+            <li class="list-group-item">Лучшие социальные сети среди бизнес-аккаунтов: миллионы лайков и просмотров.</li>
+            <li class="list-group-item">Профессионалы своего дела: доверие клиентов и экспертов бьюти-отрасли.</li>
+        </ul>
+
+        <h2 class="mt-5">Клубная программа</h2>
+        <p>С клубной программой ЛЭТУАЛЬ твои покупки будут еще выгоднее! Регистрируйся в нашей клубной программе, получай скидки и бонусы при любых покупках.</p>
+    </div>
+</div>
+</div>
+
+
+	<script src="../JS/header.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		
+	
+
+</body>
+<div id="footer-container"></div>
+<script src="../JS/footer.js"></script>
+
+</html>

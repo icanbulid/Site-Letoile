@@ -1,0 +1,272 @@
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/slider.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>ЛЭТУАЛЬ - интернет-магазин косметики и парфюмерии</title>
+		<script>
+			function performSearch(event) {
+			  event.preventDefault();
+			  const query = document.querySelector(".form-control").value;
+			  window.location.href = `Search.html?search=${encodeURIComponent(
+				query
+			  )}`;
+			}
+		  </script>
+		  
+	</head>
+	<div id="header-container"></div>
+<body>
+
+
+
+  
+<div class="container-fluid"> 
+    <div class="row justify-content-center"> 
+	<div class="col-md-7"> 
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/chanse_nov24_3260_1354.webp" class="d-block w-100" alt="Первый слайд">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/brendomania_new_nov24_3260_1354.webp" class="d-block w-100" alt="Второй слайд">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/blackfriday_nov24_3260_1354_1.webp" class="d-block w-100" alt="Третий слайд">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/keshbek100_nov24_3260_1354.webp" class="d-block w-100" alt="Четвертый слайд">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+    </div>
+	
+</div>
+<div class="col-3 " >
+    <div class="flex">
+        <a href="Catalog.html">
+            <img src="../images/advents_nov24_632_360.webp" class="index-image">
+        </a>
+	<div class="flex mt-4">
+        <a href="Catalog.html">
+            <img src="../images/vigono_nov24_632_360.webp" alt="app-store" class="index-image">
+        </a>
+	</div>
+    </div>
+</div>
+
+		<div class="col-md-4"> </div>
+		<div class="col-md-10"> 
+
+			<h1 class="text-center mb-4">Погрузитесь в атмосферу красоты и стиля с ЛЭТУАЛЬ!</h1>
+			<p class="lead text-center">Наша миссия — помочь вам раскрыть вашу естественную красоту и уверенность в себе. Мы предлагаем разнообразные косметические продукты, которые удовлетворят любые ваши потребности.</p>
+		
+			<div class="text-center mb-4">
+				<a href="Catalog.html" class="btn btn-primary btn-lg">Начните свое путешествие в мир красоты</a>
+			</div>
+		
+
+		
+
+			<h2 class="my-4">Случайные товары:</h2>
+			<div class="row">
+				<div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner" id="carousel-inner">
+						<!-- Слайды будут добавлены динамически здесь -->
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Предыдущий</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Следующий</span>
+					</button>
+				</div>
+			</div>
+		
+			
+			<h2 class="my-4">Наши преимущества:</h2>
+			<ul class="list-group mb-4">
+				<li class="list-group-item">Широкий ассортимент</li>
+				<li class="list-group-item">Эксклюзивные предложения</li>
+				<li class="list-group-item">Индивидуальный подход</li>
+				<li class="list-group-item">Быстрая доставка</li>
+				<li class="list-group-item">Регулярные акции</li>
+				<li class="list-group-item">Качество и безопасность</li>
+			</ul>
+
+			<div class="text-center mt-5">
+				<p>Спасибо, что выбрали ЛЭТУАЛЬ — ваш источник вдохновения и красоты! Мы гордимся тем, что можем предложить вам только лучшие продукты, которые помогут вам чувствовать себя уверенно и привлекательно каждый день.</p>
+			</div>
+		</div>
+</div>
+</div>
+<BR>
+	
+  <script src="../JS/header.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- СЛАЙДЕРЫ -->
+  <script>
+/* Устанавливаем стартовый индекс слайда по умолчанию: */
+let slideIndex = 1;
+/* Вызываем функцию, которая реализована ниже: */
+showSlides(slideIndex);
+
+/* Увеличиваем индекс на 1 — показываем следующий слайд: */
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
+
+/* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
+function previousSlide() {
+    showSlides(slideIndex -= 1);  
+}
+
+/* Устанавливаем текущий слайд: */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+/* Функция перелистывания: */
+function showSlides(n) {
+    /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
+    let slides = document.getElementsByClassName("item");
+    
+    /* Проверяем количество слайдов: */
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+  
+    /* Проходим по каждому слайду в цикле for: */
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }
+    /* Делаем элемент блочным: */
+    slides[slideIndex - 1].style.display = "block";    
+}
+
+
+  </script>
+
+
+<script>async function loadRandomProducts() {
+    try {
+        const response = await fetch('http://localhost:5502/api/products');
+        const products = await response.json();
+        
+        // Перемешиваем массив случайным образом
+        products.sort(() => 0.5 - Math.random());
+
+        // Берем первые 5 случайных товаров
+        const randomProducts = products.slice(0, 5);
+        const carouselInner = document.getElementById('carousel-inner');
+
+        randomProducts.forEach((product, index) => {
+            const isActive = index === 0 ? 'active' : ''; // Первая карточка будет активной
+            const slide = `
+                <div class="carousel-item ${isActive}">
+                    <a href="product.html?id=${product.id}">
+                        <img src="${window.location.origin}/${product.image}" class="d-block w-100" alt="${product.name}">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>${product.name}</h5>
+                            <p>${product.short_description}</p>
+                        </div>
+                    </a>
+                </div>
+            `;
+            carouselInner.innerHTML += slide;
+        });
+    } catch (error) {
+        console.error('Ошибка при загрузке случайных товаров:', error);
+    }
+}
+
+async function loadproducts() {
+        console.log('Загрузка продуктов...');
+        try {
+            const response = await fetch('http://localhost:5502/api/products');
+            const products = await response.json();
+            const productsContainer = document.getElementById('products-container');
+  
+            if (products.length === 0) {
+                productsContainer.innerHTML = '<p class="text-center">Нет доступных продуктов.</p>';
+                return;
+            }
+  
+            const user = JSON.parse(localStorage.getItem("user"));
+            products.forEach(product => {
+                const col = document.createElement('div');
+                col.className = 'col-md-3 mb-4';
+                col.innerHTML = `
+                    <div class="card text-center hover-effect" data-id="${product.id}" >
+                    <img class="card__image " onclick="location.href='product.html?id=${product.id}'" src="${window.location.origin}/${product.image}" alt="${product.name}" />
+                    <div class="card-body" onclick="location.href='product.html?id=${product.id}'" >
+                         <h2 class="card__title">${product.name}</h2>
+                        <div class="card__short_description">${product.short_description}</div>
+                    </div>
+                    <div class="card-footer bg-white">
+                      <div class="card__price--common"><strong>${product.price} ₽</strong></div>
+                      <div class="row text-center align-items-center">
+                        <div class="col-md-12 d-flex justify-content-center">
+                          ${!user ? '' : '<button class="card__add btn btn-primary btn-rectangle">Добавить в корзину</button>'}
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                `;
+                productsContainer.appendChild(col);
+            });
+  
+            const cardAddArr = Array.from(document.querySelectorAll(".card__add"));
+            cardAddArr.forEach((cardAdd) => {
+                cardAdd.addEventListener("click", async (e) => {
+                    e.preventDefault();
+                    const card = e.target.closest(".card");
+                    const product = new Product(card);
+                    myCart.addProduct(product);
+                    localStorage.setItem("cart", JSON.stringify(myCart));
+                    cartNum.textContent = myCart.count;
+                });
+            });
+  
+        } catch (error) {
+            console.error('Ошибка при загрузке продуктов:', error);
+            const productsContainer = document.getElementById('products-container');
+            productsContainer.innerHTML = '<p class="text-center">Ошибка при загрузке продуктов.</p>';
+        }
+    }
+  
+// Вызов функции загрузки случайных товаров при загрузке страницы
+window.addEventListener('load', function() {
+    loadproducts();
+    loadRandomProducts(); // Загрузка случайных товаров
+});
+</script>
+
+</body>
+<div id="footer-container"></div>
+<script src="../JS/footer.js"></script>

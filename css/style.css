@@ -1,0 +1,530 @@
+header {
+    text-align: center;
+    & a {
+      color: black;
+    }
+    margin-bottom: -20px
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    & h1 {
+      margin: 25px;
+    }
+  }
+  footer {
+    width: 100%;
+    height: 300px;
+    background: url('../images/footer.webp') no-repeat center center;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background-attachment: scroll; /* Измените на scroll */
+}
+.footer-divider {
+  height: 2px; /* Высота разделителя */
+  background-color: #1e00a6; /* Цвет разделителя */
+  margin-bottom: 40px; /* Центрирование разделителя */
+}
+
+.footer-content {
+    padding-bottom: 30px;
+}
+  
+  .copyright {
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+
+
+  .col-12 {
+    padding: 0 15px;
+  }
+  
+
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  
+
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+
+
+
+textarea{
+  width: 200%;
+  
+}
+.form-control {
+  width: 100%; 
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.register-input{
+
+  width: 100%; 
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.search-input {
+  width: 100%; 
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 15px; 
+}
+
+form{margin: 0 auto;}
+.form-login {
+  width: 100%;
+  max-width: 350px; 
+  margin: 0 auto; 
+  padding: 10px; 
+  box-sizing: border-box; 
+}
+
+p.lead {
+  text-indent: 30px; /* Отступ с красной строки только для абзацев с классом lead */
+}
+
+.lead {
+  text-indent: 0; /* Убираем отступ с красной строки для других элементов, включая списки */
+}
+
+
+
+
+@font-face {
+	font-family: 'pizza-hut.otf';
+	src: url('../fonts/pizza-hut.otf'); /* IE 9 Compatibility Mode */
+
+}
+
+
+.logo-text {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "pizza-hut.otf";
+}
+
+
+
+a:active {
+  color: orange;
+}
+
+a:hover {
+  color: rgb(255, 255, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: rgb(25, 0, 255);
+}
+
+.nav-link {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: black; /* Цвет текста по умолчанию */
+}
+
+.nav-link:hover {
+  color: rgb(25, 0, 255); /* Цвет текста при наведении */
+}
+
+.input-group {
+  width: 600px; /* Установите нужную ширину */
+  margin: 0 auto; /* Центрирует по горизонтали */
+}
+
+.hover-effect {
+  transition: transform 0.2s;
+}
+
+.hover-effect:hover {
+  transform: scale(1.01); /* Увеличение карточки при наведении */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавление тени */
+}
+
+iframe{
+  margin-bottom: 25 ;
+}
+
+.custom-img {
+  width: auto;
+  height: 330px;
+  margin: 0px;
+}
+
+.active-link {
+  background-color: transparent; /* Убираем фон */
+  color: #007bff; /* Синий цвет текста */
+  text-decoration: underline; /* Подчеркивание текста */
+  text-shadow: 1px 1px 2px rgba(0, 40, 71, 0.2); /* Тень для текста */
+}
+
+.nav-link.active-link { 
+  text-decoration: none; /* Убираем подчеркивание */
+  pointer-events: none; /* Делаем ссылку неактивной */
+  cursor: default; /* Устанавливаем курсор по умолчанию */
+}
+
+
+
+
+.dropdown-item {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: black; /* Цвет текста */
+  padding: 10px 15px; /* Отступы */
+  transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+  border-radius: 8px; /* Скругленные края */
+  outline: none; /* Убираем обводку при фокусе */
+  display: inline-block; /* Чтобы отработали отступы и границы */
+}
+
+.dropdown-item:hover {
+  background-color: red; /* Цвет фона при наведении */
+  color: white; /* Цвет текста при наведении */
+}
+
+.dropdown-item:focus {
+  outline: none; /* Убираем выделение при фокусе */
+}
+
+#footer {
+  margin-top: auto;
+}
+
+
+
+
+
+.nav-link {
+    text-decoration: none; /* Убираем подчеркивание по умолчанию */
+    position: relative; /* Для позиционирования псевдоэлемента */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Цвет текста при наведении */
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Выделение активной ссылки, если нужно */
+}
+
+.nav-link::after {
+  content: ''; /* Псевдоэлемент для подчеркивания */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Позиционирование подчеркивания */
+  height: 2px; /* Толщина подчеркивания */
+  background-color: #007bff; /* Цвет подчеркивания */
+  transform: scaleX(0); /* Изначально скрыто */
+  transition: transform 0.3s ease; /* Плавный переход */
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1); /* Появление подчеркивания при наведении */
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* --------------------- Created By InCoder --------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+#product-details {
+  text-align: left;
+  padding: 20px;
+}
+
+#product-details h2 {
+  font-size: 44px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#product-details img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#product-details p {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+#product-details strong {
+  font-weight: bold;
+}
+
+#product-details a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#product-details a:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+.btn-rectangle {
+  width: 100%; /* Ширина кнопки на всю ширину родителя */
+}
+
+.card {
+  display: flex; /* Используем Flexbox */
+  flex-direction: column; /* Вертикальная ориентация */
+  justify-content: space-between; /* Распределяем пространство между элементами */
+  border-radius: 10px; /* Закругляет углы карточки */
+  box-shadow: none; /* Убирает тень по умолчанию */
+  transition: transform 0.2s, box-shadow 0.2s, border 0.2s; /* Плавный эффект при наведении */
+  margin: 20px; /* Отступы между карточками */
+  overflow: hidden; /* Скрывает переполнение */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Увеличивает карточку при наведении */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляет легкую тень при наведении */
+  border: 1px solid #ddd; /* Добавляет рамку при наведении */
+}
+
+.card__image {
+  width: 100%; /* Изображение занимает всю ширину карточки */
+  height: auto; /* Высота изображения автоматически */
+}
+
+.card-body {
+  padding: 15px; /* Отступы внутри карточки */
+  background-color: #fff; /* Фоновый цвет карточки */
+  flex-grow: 1; /* Позволяет телу карточки занимать доступное пространство */
+}
+
+.card__title {
+  font-size: 24px; /* Размер заголовка */
+  color: #333; /* Цвет заголовка */
+  margin: 10px 0; /* Отступы сверху и снизу */
+}
+
+.card__short_description {
+  font-size: 16px; /* Размер описания */
+  color: #666; /* Цвет описания */
+  margin-bottom: 15px; /* Отступ снизу */
+  max-height: 60px; /* Устанавливаем максимальную высоту для описания */
+  overflow: hidden; /* Скрывает переполнение */
+  text-overflow: ellipsis; /* Добавляет многоточие */
+  display: -webkit-box; /* Для поддержки многоточия */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  -webkit-line-clamp: 2; /* Количество строк, после которых текст будет обрезан */
+  white-space: normal; /* Позволяет перенос текста на новую строку */
+}
+
+
+
+.container-fluid {
+  max-width: 1480px; 
+  margin: 0 auto; 
+}
+
+.btn-catalog{
+  padding: 10px 30px; 
+}
+.button-container {
+  display: flex; /* Используем flexbox */
+  justify-content: center; /* Центрируем кнопки по горизонтали */
+}
+
+.icon-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #1e00a6; /* Цвет текста */
+  margin: 0 10px; /* Отступы между кнопками */
+}
+
+.icon-button i {
+  font-size: 24px; /* Размер иконки */
+  margin-bottom: 5px; /* Отступ между иконкой и текстом */
+}
+
+.account-link {
+  display: flex; /* Используем flexbox для выравнивания */
+  align-items: center; /* Вертикальное выравнивание по центру */
+}
+
+#username {
+  display: flex; /* Используем flexbox для выравнивания текста */
+  align-items: center; /* Вертикальное выравнивание текста */
+  color: #1e00a6; /* Цвет текста имени пользователя */
+}
+
+
+
+.nav-link {
+    text-decoration: none; /* Убираем подчеркивание по умолчанию */
+    position: relative; /* Для позиционирования псевдоэлемента */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход */
+}
+
+.nav-link-account {
+  color: #1e00a6; /* Цвет текста ссылки */
+}
+
+.nav-link-account:hover i,
+.nav-link-account:focus i {
+    color: #1e00a6; /* Синий цвет при наведении и фокусе */
+}
+
+.nav-link-account::after {
+  content: ''; /* Псевдоэлемент для подчеркивания */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Позиционирование подчеркивания */
+  height: 2px; /* Толщина подчеркивания */
+  background-color: #1e00a6; /* Цвет подчеркивания */
+  transform: scaleX(0); /* Изначально скрыто */
+  transition: transform 0.3s ease; /* Плавный переход */
+}
+.carousel {
+  border-radius: 15px; /* Установите нужный радиус для округления */
+  overflow: hidden; /* Скрыть части изображения, выходящие за пределы контейнера */
+}
+.carousel-control-prev,
+        .carousel-control-next {
+            width: 50px; /* Ширина кнопок */
+            height: 50px; /* Высота кнопок */
+            border-radius: 50%; /* Круглая форма */
+            background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+            top: 50%; /* Позиционирование по вертикали */
+            transform: translateY(-50%); /* Центрирование по вертикали */
+            background-color: black; /* Цвет иконок */
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          
+            border-radius: 50%; /* Круглая форма иконок */
+        }
+
+
+
+
+        .carousel-inner img {
+          width: 100%;
+          object-fit: cover; /* Это свойство будет обрезать изображение, чтобы оно заполнило контейнер */
+      }
+      .carousel {
+        border-radius: 15px; /* Установите нужный радиус для округления */
+        overflow: hidden; /* Скрыть части изображения, выходящие за пределы контейнера */
+      }
+
+
+      #productCarousel {
+        max-width: 700px; /* Установите желаемую максимальную ширину */
+        margin: 0 auto; /* Центрирование слайдера */
+    }
+    
+    .carousel-inner img {
+      max-height: 400px; /* Установите желаемую максимальную высоту для изображений */
+      width: 100%; /* Устанавливаем ширину на 100% для заполнения контейнера */
+      object-fit: contain; /* Изображения будут масштабироваться, чтобы поместиться в контейнер */
+  }
+
+.icon-footer{
+  width: auto; 
+  height: 50px;
+}
+
+.index-image {
+    object-fit: cover;
+    border-radius: 15px; 
+    overflow: hidden; 
+    height: 162px; 
+}
+.text-black {
+  color: black; /* Измените цвет названия на черный */
+}
+
+.carousel-caption {
+  bottom: 0; /* Прикрепляет плашку к нижней части */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  font-size: 1.2em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Ограничение на 2 строки */
+  line-clamp: 2; /* Для других браузеров */
+  text-overflow: ellipsis; /* Добавляет "..." в конце */
+}
+
+
+
+
